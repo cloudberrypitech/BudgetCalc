@@ -5,6 +5,7 @@ import os
 main = Tk()
 main.title("BudgetCalc")
 ttle = Label(main, text="BudgetCalc", font=("Copperplate Gothic Bold", 25))
+ttle.pack()
 
 def ganpati():
     root = Toplevel
@@ -81,5 +82,5 @@ def ganpati():
             reset_var_values()
     Button(root, text="Submit", command=submit).pack(pady=10, padx=10)
 
-Button(main, text="India - Ganpati-Festival Budget Calculator")
+Button(main, text="India - Ganpati-Festival Budget Calculator").pack()
 main.mainloop()
