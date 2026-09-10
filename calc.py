@@ -17,6 +17,7 @@ def ganpati():
     minval = 0
     total = 0
     maxval = 0
+    messagebox.showinfo("BudgetCalc Info", "It is suggested to put this window into fullscreen mode.")
     decoration_cost_label = Label(root, text="Budget for Sports")
     decoration_cost_label.pack(pady=10, padx=10)
     decoration_cost_entry = Entry(root)
