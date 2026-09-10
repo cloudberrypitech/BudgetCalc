@@ -4,13 +4,14 @@ import os
 
 main = Tk()
 main.title("BudgetCalc")
+main.geometry("500x500")
 ttle = Label(main, text="BudgetCalc", font=("Copperplate Gothic Bold", 25))
 ttle.pack()
 
 def ganpati():
-    root = Toplevel
+    root = Toplevel(main)
     root.title("BudgetCalc")
-    root.geometry("1920x1080")
+    root.geometry("500x500")
     root.resizable(width=False, height=False)
     title = Label(root, text="BudgetCalc", font=("Copperplate Gothic Bold", 25))
     title.pack()
@@ -82,5 +83,5 @@ def ganpati():
             reset_var_values()
     Button(root, text="Submit", command=submit).pack(pady=10, padx=10)
 
-Button(main, text="India - Ganpati-Festival Budget Calculator").pack()
+Button(main, text="India - Ganpati-Festival Budget Calculator", command=ganpati).pack()
 main.mainloop()
