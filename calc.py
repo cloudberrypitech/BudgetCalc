@@ -12,7 +12,6 @@ def ganpati():
     root = Toplevel(main)
     root.title("BudgetCalc")
     root.geometry("500x500")
-    root.resizable(width=False, height=False)
     title = Label(root, text="BudgetCalc", font=("Copperplate Gothic Bold", 25))
     title.pack()
     expenses = []
