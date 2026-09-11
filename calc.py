@@ -102,6 +102,19 @@ def public_event():
             output.see(END)
 
             expenses.clear()
+        
+        elif total == max_allowed:
+            messagebox.showinfo(
+                "Success",
+                f"Total Expenses {total}"
+            )
+
+            output.insert(END, f"\nTotal Expenses {total}")
+            output.insert(END, f"\nPeak Expense Value {maxval}")
+            output.insert(END, f"\nMinimum Expense Value {minval}")
+            output.see(END)
+
+            expenses.clear()
 
         else:
             messagebox.showerror(
